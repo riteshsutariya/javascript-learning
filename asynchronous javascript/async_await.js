@@ -1,3 +1,4 @@
+//first example
 const asyncFunc=(flag)=>{
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
@@ -21,6 +22,8 @@ doSomething();
 console.log("After");
 
 
+//second example 
+//using fetch() which returns Promise
 fetch('https://jsonplaceholder.typicode.com/users/',{method:'GET'}).then((Response)=>{
 if(!Response.ok)
 {
